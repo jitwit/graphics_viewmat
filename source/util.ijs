@@ -89,8 +89,6 @@ mat=. y
 ang=. ''
 
 NB. ---------------------------------------------------------
-echo  <hue
-echo COLORMAPS
 if. (#COLORMAPS) > COLORMAPS i. <hue do.
   hue =. ". hue,'_palette'
 end.
