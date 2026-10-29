@@ -57,6 +57,8 @@ NB.
 NB. hue may be empty, in which case a default is used
 NB. hue may be a N by 3 matrix of colors or a vector
 NB.     of RGB integers.
+NB. hue may be a string indicating the desired color
+NB.     palatte.
 NB.
 NB. returns:
 NB.   original data
@@ -85,6 +87,14 @@ getvm1=: 4 : 0
 hue=. x
 mat=. y
 ang=. ''
+
+NB. ---------------------------------------------------------
+select. hue
+case. 'viridis' do.
+  hue =. viridis_palette
+case. 'inferno' do.
+  hue =. inferno_palette
+end.
 
 NB. ---------------------------------------------------------
 if. 2 > #$hue do.
@@ -125,7 +135,7 @@ else.
   if. #hue do.
     h=. hue
   else.
-    h=. 255 * #: 7 | 3^i.6
+    h=. turbo_palette
   end.
   val=. ,mat
   max=. >./ val

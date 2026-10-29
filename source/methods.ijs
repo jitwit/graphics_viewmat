@@ -111,6 +111,8 @@ NB.
 NB. hue is: 3 column table of R-G-B triplets
 NB.     or: list of RGB values
 NB.     or: 'rgb'  - mat is an matrix of RGB values
+NB.     or: or a string naming a color map
+NB.         such as iridis, inferno, etc
 NB.
 NB. if mat is boolean, x defaults to black/white
 NB. otherwise hue defaults to red - purple spectrum
