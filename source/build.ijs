@@ -1,15 +1,15 @@
 NB. build.ijs
-
-writesourcex_jp_ '~Addons/graphics/viewmat/source';'~Addons/graphics/viewmat/viewmat.ijs'
+load'project'
+writesourcex_jp_ '/home/jrn/code/graphics_viewmat/source';'/home/jrn/code/graphics_viewmat/viewmat.ijs'
 
 f=. 3 : 0
-(jpath '~addons/graphics/viewmat/',y) (fcopynew ::0:) jpath '~Addons/graphics/viewmat/',y
+(jpath '/home/jrn/code/graphics_viewmat/',y) (fcopynew ::0:) jpath '/home/jrn/code/graphics_viewmat/',y
 )
 
 f 'viewmat.ijs'
 
 f=. 3 : 0
-(jpath '~Addons/graphics/viewmat/',y) fcopynew jpath '~Addons/graphics/viewmat/source/',y
+(jpath '/home/jrn/code/graphics_viewmat/',y) fcopynew jpath '/home/jrn/code/graphics_viewmat/source/',y
 )
 
 f 'manifest.ijs'

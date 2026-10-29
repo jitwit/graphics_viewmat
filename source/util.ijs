@@ -90,10 +90,18 @@ ang=. ''
 
 NB. ---------------------------------------------------------
 select. hue
+case. '' do.
+  hue =. viridis_palette
 case. 'viridis' do.
   hue =. viridis_palette
 case. 'inferno' do.
   hue =. inferno_palette
+case. 'plasma' do.
+  hue =. plasma_palette
+case. 'turbo' do.
+  hue =. turbo_palette
+case. 'magma' do.
+  hue =. turbo_palette
 end.
 
 NB. ---------------------------------------------------------
